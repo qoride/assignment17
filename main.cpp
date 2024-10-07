@@ -16,11 +16,10 @@ int main(){
         if(array[i] == input){
             accepted = true;
             cout << "\nThe number " << input << " is at element " << i << "!";
-            break;
+            return i;
         }
     }
 
-    if(!accepted)cout << "Could not find the number " << input << ".";
-
-    return 0;
+    cout << "Could not find the number " << input << ".";
+    return -1;
 }
